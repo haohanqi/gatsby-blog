@@ -1,0 +1,25 @@
+/* Link{
+    display:block;
+    float: right;
+    color: red;
+    margin-left:30px;
+} */
+
+header{
+    overflow: auto;
+    background-color: darkgrey;
+    height:60px;
+}
+.nav{
+    float:right;
+    height: 100%;
+    width: 30%;
+    text-align: center;
+}
+
+.nav-item{
+    line-height:60px;
+    color:black;
+    margin: auto 10px; 
+}
+
