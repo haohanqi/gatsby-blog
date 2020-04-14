@@ -2,6 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 import Blog from '../template/Blog'
 import Layout from "../components/layout"
+import './index.css'
 
 const IndexPage = ( 
   {data}
@@ -9,13 +10,22 @@ const IndexPage = (
   
   <Layout>
 
-   <div><h3>Haohanqi's blogs</h3></div>
+   <div className = 'blogTitle'><h3>Haohanqi's blogs</h3></div>
 
+  
+  <div className='blog-container'>
   {
-    data.allMarkdownRemark.edges.map((item,key)=>{
-      return <Link style={{display:`block`}} key={item.node.frontmatter.path} to={item.node.frontmatter.path}>{item.node.frontmatter.title}</Link>
+    data.allMarkdownRemark.edges.map((item)=>{
+      return (
+        <div className = 'blog-item-container'>
+          <Link className = 'blog-item' style={{display:`block`}} key={item.node.frontmatter.path} to={item.node.frontmatter.path}>{item.node.frontmatter.title}</Link>
+          <div className='author'>Written By: {item.node.frontmatter.author}</div>
+          <div className = 'description'> {item.node.excerpt}</div>
+        </div>
+      )
     })
   }
+  </div>
 
 
    
@@ -36,6 +46,7 @@ export const pageQuery = graphql`
             path
             date(formatString: "MMMM DD, YYYY")
             title
+            author
           }
         }
       }
