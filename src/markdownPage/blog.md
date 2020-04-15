@@ -1,13 +1,18 @@
 ---
 path: "/blog/my-first-post"
 date: "2019-05-04"
-title: "My first blog post"
+title: "Group Name and Memebers"
 author: "Hao HanQi"
 ---
 
-### Haohanqi's first blog 
+### Group Name and Memebers
 
-1. Coding markdown is very important 
-2. Coding gatsby is very important 
-3. Coding start today
+<div class='groupTitle'>We are Group 2 TechHub</div>
+
+<div class='groupTitle'>Memebers:</div>
+
+1. HanQi Hao
+2. Sandeep 
+3. Sangini
+4. Aniket
 

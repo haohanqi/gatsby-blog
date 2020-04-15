@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {graphql} from 'gatsby'
+import {graphql, Link} from 'gatsby'
 import './blog.css'
 
 export default function Blog ({data}){
@@ -15,6 +15,10 @@ export default function Blog ({data}){
           <div className="blog-content-container" dangerouslySetInnerHTML={{__html:html}}>
              
           </div>
+
+          <Link to='/#home'>
+          <button className='keepReadingButton'>Back to Home</button>
+          </Link>
         
         </div>
 

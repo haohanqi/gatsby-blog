@@ -1,6 +1,6 @@
 .container {
-    width: 400px;
-    height: 400px;
+    width: 80%;
+ 
     margin: 5% auto;
 }
 
@@ -8,4 +8,14 @@
     width: 70%;
     height:70%;
     margin: 5% auto;
+}
+
+.groupTitle{
+   font-size: 20px;
+   color:red;
+   margin-bottom: 5%;
+}
+.textdesprition{
+    font-size:22px;
+    line-height: 35px;
 }

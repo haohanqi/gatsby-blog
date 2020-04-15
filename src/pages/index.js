@@ -10,10 +10,10 @@ const IndexPage = (
   
   <Layout>
 
-   <div className = 'blogTitle'><h3>Haohanqi's blogs</h3></div>
+   <div className = 'blogTitle'><h3>Entrepenership Group Project</h3></div>
 
   
-  <div className='blog-container'>
+  <div className='blog-container' id='home'>
   {
     data.allMarkdownRemark.edges.map((item)=>{
       return (
@@ -21,6 +21,9 @@ const IndexPage = (
           <Link className = 'blog-item' style={{display:`block`}} key={item.node.frontmatter.path} to={item.node.frontmatter.path}>{item.node.frontmatter.title}</Link>
           <div className='author'>Written By: {item.node.frontmatter.author}</div>
           <div className = 'description'> {item.node.excerpt}</div>
+          <Link to={item.node.frontmatter.path}>
+            <button className='keepReadingButton'>Keep Reading</button>
+          </Link>
         </div>
       )
     })

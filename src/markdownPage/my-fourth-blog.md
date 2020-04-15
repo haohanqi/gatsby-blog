@@ -1,11 +1,7 @@
 ---
 path: /blog/fourth-blog
-date: 2020-02-06T20:53:11.929Z
-title: My Fourth Blog
+date: "2019-05-07"
+title: Value Proposition
 ---
-***I figure out how to redeploy git change.***
 
-* pull git from github.
-* make changes
-* push to github again 
-* check on website
+Value proposition statement: We provide one single chip with an app to help our customers to monitor their health condition 24 for 7. With sharing data to hospitals and doctors, we are not only to help our customers to track their health condition, but also help them to maintain their health

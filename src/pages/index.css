@@ -6,24 +6,45 @@
 
 .blog-container{
     margin-bottom: 5%;
-    
 }
 
+
 .blog-item-container{
-    border: 1px solid skyblue;
+    border: 0.5px solid black;
     border-radius: 10px;
     margin: 5% auto;
     padding-left: 5%;
+    border-radius:4px; 
+    width: 100%;
 }
+
+.blog-item-container:hover {
+    transform: translateY(-0.25rem);
+    box-shadow: rgba(46, 41, 51, 0.08) 0px 4px 8px, rgba(71, 63, 79, 0.16) 0px 8px 16px;
+ }
+
 
 
 .blog-item{
 
     text-decoration: none;
     margin: 5% auto 0 auto;
-    color:aqua;
+    color:black;
+    font-weight: bold;
+    font-size: 25px;
 
 }
+
+.keepReadingButton{
+    margin-bottom: 2%;
+    font-size: 15px;
+    border: 0.5px solid black;
+    outline:none;
+}
+.keepReadingButton:hover{
+    background-color: azure;
+}
+
 
 .author{
     font-size:15px;
