@@ -7,7 +7,7 @@ const Header = ({ siteTitle }) => (
 
   <div className="nav">
    
-   <Link className="nav-item">Home</Link>
+   <Link className="nav-item">TechHub</Link>
   </div>
   
   </header>
